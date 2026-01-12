@@ -1,0 +1,103 @@
+.sticky-note-board {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.note-creation-section {
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: 2px solid #e0e0e0;
+}
+
+.note-creation-section h3 {
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.create-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.create-form textarea {
+  min-height: 80px;
+  resize: vertical;
+  font-size: 14px;
+}
+
+.color-picker {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.color-picker span {
+  font-weight: 500;
+  color: #333;
+}
+
+.color-option {
+  width: 40px;
+  height: 40px;
+  border: 3px solid transparent;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.color-option:hover {
+  transform: scale(1.1);
+}
+
+.color-option.selected {
+  border-color: #333;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.btn-add-note {
+  background: #667eea;
+  color: white;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  align-self: flex-start;
+}
+
+.btn-add-note:hover {
+  background: #5568d3;
+}
+
+.board {
+  flex: 1;
+  position: relative;
+  background: #fafafa;
+  border-radius: 8px;
+  border: 2px dashed #e0e0e0;
+  overflow: auto;
+  min-height: 400px;
+}
+
+.board.empty-state {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.empty-state {
+  text-align: center;
+  color: #999;
+  font-size: 1.1em;
+  padding: 40px;
+}
+
+.note-stats {
+  margin-top: 15px;
+  text-align: right;
+  color: #666;
+  font-size: 0.9em;
+}

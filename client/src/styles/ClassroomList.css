@@ -1,0 +1,158 @@
+.classroom-list-container {
+  min-height: 100vh;
+  padding: 40px 20px;
+}
+
+.list-header {
+  text-align: center;
+  color: white;
+  margin-bottom: 40px;
+}
+
+.list-header h1 {
+  font-size: 3em;
+  margin-bottom: 10px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.list-header p {
+  font-size: 1.2em;
+  opacity: 0.9;
+}
+
+.name-input-section {
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  max-width: 500px;
+  margin: 0 auto 40px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+}
+
+.name-input-section h2 {
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.name-input {
+  width: 100%;
+  font-size: 16px;
+  padding: 12px 16px;
+}
+
+.create-classroom {
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  max-width: 600px;
+  margin: 0 auto 40px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+}
+
+.create-classroom h2 {
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.input-group {
+  display: flex;
+  gap: 10px;
+}
+
+.input-group input {
+  flex: 1;
+}
+
+.btn-create {
+  background: #667eea;
+  color: white;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.btn-create:hover {
+  background: #5568d3;
+}
+
+.classrooms-section {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.classrooms-section h2 {
+  color: white;
+  margin-bottom: 30px;
+  text-align: center;
+  font-size: 2em;
+}
+
+.classrooms-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.classroom-card {
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.classroom-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+}
+
+.classroom-card h3 {
+  color: #333;
+  margin-bottom: 15px;
+  font-size: 1.3em;
+}
+
+.classroom-stats {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+  padding: 15px;
+  background: #f5f5f5;
+  border-radius: 8px;
+}
+
+.classroom-stats span {
+  color: #666;
+  font-size: 0.95em;
+}
+
+.btn-join {
+  width: 100%;
+  background: #667eea;
+  color: white;
+  padding: 12px;
+  font-weight: 600;
+}
+
+.btn-join:hover:not(:disabled) {
+  background: #5568d3;
+}
+
+.btn-join:disabled {
+  background: #ccc;
+  opacity: 0.6;
+}
+
+.no-classrooms {
+  text-align: center;
+  color: white;
+  padding: 40px;
+  font-size: 1.1em;
+}
+
+.loading {
+  text-align: center;
+  color: white;
+  padding: 40px;
+}

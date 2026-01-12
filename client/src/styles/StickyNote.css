@@ -1,0 +1,97 @@
+.sticky-note {
+  position: absolute;
+  width: 250px;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  user-select: none;
+  transition: box-shadow 0.2s;
+}
+
+.sticky-note:hover {
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+}
+
+.sticky-note.dragging {
+  z-index: 1000;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.4);
+}
+
+.note-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.note-author {
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 0.85em;
+  font-weight: 600;
+}
+
+.note-actions {
+  display: flex;
+  gap: 5px;
+}
+
+.edit-btn,
+.delete-btn {
+  background: rgba(0, 0, 0, 0.1);
+  border: none;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 0.9em;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.edit-btn:hover,
+.delete-btn:hover {
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.note-content {
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 0.95em;
+  line-height: 1.5;
+  word-wrap: break-word;
+  white-space: pre-wrap;
+  margin-bottom: 10px;
+  min-height: 40px;
+}
+
+.note-edit {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.note-edit textarea {
+  min-height: 80px;
+  padding: 8px;
+  border: 2px solid rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  font-family: inherit;
+  resize: vertical;
+}
+
+.save-btn {
+  background: rgba(0, 0, 0, 0.2);
+  padding: 6px 12px;
+  border-radius: 4px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.save-btn:hover {
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.note-time {
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 0.8em;
+  display: block;
+  text-align: right;
+}
